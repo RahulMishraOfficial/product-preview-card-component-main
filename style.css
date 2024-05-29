@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    max-width: 480px;
+    min-height: 320px;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+main .imageSection{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+main .imageSection img{
+    width: 100%;
+    height: 100%;
+}
+main .contentSection{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+#name{
+    font-size: 11px;
+    color: hsl(158, 36%, 37%);
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+main .contentSection h1{
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+main .contentSection p{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: hsl(158, 36%, 37%);
+    line-height: 20px;
+}
+main .contentSection .price .newPrice{
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+main .contentSection .price{
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+    margin-top: 10px;
+}
+main .contentSection .price .oldPrice{
+    text-decoration: line-through;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.attribution{
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Fraunces", serif;
+}
+.attribution a{
+    text-decoration: none;
+}
+button:hover{
+    background-color: hsl(158, 66%, 14%);
+}
+@media (width < 485px){
+    main{
+        max-width: 100vw;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 1em;
+    }
+    main .imageSection{
+        width: 100%;
+        height: 50%;
+    }
+    main .imageSection img{
+        object-fit: cover;
+    }
+    main .contentSection{
+        width: 100%;
+        height: 50%;
+    }
+    main .contentSection #name{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    main .contentSection h1{
+        font-size: 2.5em;
+        line-height: 1em;
+        margin-top: 0.80em;
+    }
+    main .contentSection p{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin-top: 1.5em;
+    }
+    main .contentSection .price{
+        margin-top: 2em;
+    }
+    main .contentSection .price .newPrice{
+        font-size: 3.2em;
+    }
+    main .contentSection .price .oldPrice{
+        font-size: 1.5em;
+    }
+    main .contentSection button{
+        height: 2.5em;
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+    main .contentSection button img{
+        width: 0.90em;
+    }
+}
